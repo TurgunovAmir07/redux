@@ -12,7 +12,7 @@ export const cashReducer = (state = initialState, action) => {
     case "GET CASH":
       return {
         ...state,
-        cash: state.case - action.payload,
+        cash: state.cash - action.payload,
       };
     default:
       return state;
